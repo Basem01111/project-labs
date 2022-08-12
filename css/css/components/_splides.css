@@ -1,0 +1,11 @@
+#reviews-slide {
+  display: none !important;
+}
+#reviews-slide .splide__slide .is-visible .is-active {
+  -webkit-transform: scale(1.08, 1);
+          transform: scale(1.08, 1);
+}
+#reviews-slide .splide__slide .splide__slide--clone {
+  -webkit-transform: scale(0.78) translateY(25%);
+          transform: scale(0.78) translateY(25%);
+}

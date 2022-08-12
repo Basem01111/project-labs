@@ -1,0 +1,78 @@
+.main-slide-bar {
+    background-color: white;
+    max-width: 100%;
+    width: 700px;
+    position: fixed;
+    z-index: 1008;
+    height: 100%;
+    right: -100%;
+    opacity: 0;
+    padding: 50px;
+    top: 0;
+    transition: 600ms;
+    box-shadow: 0 0 103px 0 #000000d9;
+    overflow-y: auto;
+    &.show
+{
+        right: 0;
+        opacity: 1;
+    }
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    .tog-slide {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: $grrey-text;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .silde-row {
+        row-gap: 17px;
+        margin-top: 25px;
+
+        .item-slide {
+            font-size: 30px;
+            @include maxWidth(md) {
+                font-size: 18px;
+            }
+            font-weight: 600;
+            color: $text-black;
+            transition: $transition;
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -ms-transition: $transition;
+            -o-transition: $transition;
+            &:hover {
+                color: $main-color;
+            }
+        }
+        .row-slide-small {
+            .small-item-slide {
+                transition: $transition;
+                font-size: 16px;
+                font-weight: 400;
+                color: $main-color;
+                -webkit-transition: $transition;
+                -moz-transition: $transition;
+                -ms-transition: $transition;
+                -o-transition: $transition;
+                &:hover {
+                    color: $main-color-2;
+                }
+            }
+        }
+        .info-contact {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: $grrey-text;
+            font-size: 14px;
+            svg {
+                width: 30px;
+                fill: $main-color;
+            }
+        }
+    }
+}

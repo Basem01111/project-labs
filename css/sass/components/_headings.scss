@@ -1,0 +1,71 @@
+// main-title-art
+.main-title-art {
+    font-size: 48px;
+    color: $text-black;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+// small-title-red
+.small-title-red {
+    color: $red-color;
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+//main-text-art
+.main-text-art {
+    color: $grrey-text;
+    font-size: 23px;
+
+    font-weight: 400;
+}
+
+.title-ribbon {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: $main-color;
+    color: #fff;
+    width: calc(100% + 20px);
+    position: relative;
+    right: -10px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: $main-color-3 $main-color-3 transparent transparent;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: $main-color-3 transparent transparent $main-color-3;
+    }
+}
+
+// num
+.lg-num {
+    color: $main-color;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.small-title {
+    color: $text-black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.text-card {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    color: $grrey-text;
+}

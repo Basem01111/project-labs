@@ -1,0 +1,15 @@
+/* Start Lnding */
+.landing {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, yellow), color-stop(50%, green));
+  background-image: linear-gradient(to right, yellow 50%, green 50%);
+  text-align: center;
+}
+.landing .img-landing {
+  width: 800px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* End Lnding */
+/*# sourceMappingURL=_home.css.map */

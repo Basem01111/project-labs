@@ -1,0 +1,33 @@
+// slide-shop
+.slide-shop {
+    padding: 30px;
+    background-color: white;
+    max-width: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1008;
+    height: 100%;
+    right: 30%;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    transition: $transition;
+    box-shadow: 0 0 103px 0 #000000d9;
+    overflow-y: auto;
+    &.show {
+        visibility: visible;
+        right: 0;
+        opacity: 1;
+    }
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    .tog-slide {
+        position: absolute;
+        left: 15px;
+        top: 7px;
+        color: $grrey-text;
+        font-size: 28px;
+        cursor: pointer;
+    }
+}

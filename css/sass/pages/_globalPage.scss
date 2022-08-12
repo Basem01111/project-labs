@@ -1,0 +1,39 @@
+body {
+    font-family: "Vazirmatn", sans-serif;
+    scroll-behavior: smooth;
+}
+// Scroll Bar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $main-color-2;
+}
+  
+
+// All Rest
+* {
+    @include all-reset;
+}
+// ul Reset
+ul,
+ol {
+    @include ul-reset;
+}
+// a Reset
+a {
+    @include a-reset;
+}
+// reset btn
+button {
+    border: none;
+    outline: none;
+}
